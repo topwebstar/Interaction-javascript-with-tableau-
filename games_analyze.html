@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Export</title>
+    <script type="text/javascript" src="jquery.mmin.js"></script>
+    <script type="text/javascript" src="tableau_custom.js"></script>
+    
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body onload="initViz();">
+    <header id="masthead" class="site-header" role="banner">
+        <div class="header-shadow"></div>
+        <div class="btn_div">
+            <button onclick="exportToPDF();" class="exp_btn">Export to PDF</button>
+            <button onclick="exportToCSV();" class="exp_btn">Export to CSV</button>
+            <button onclick="exportToExcel();" class="exp_btn">Export to Excel</button>
+            <button onclick="exportImage();" class="exp_btn">Export as Image</button>
+            <button onclick="exportPowerPoint();" class="exp_btn_big">Export to PowerPoint</button>
+            <button onclick="showDownloadDialog();" class="exp_btn_big">Show Download Dialog</button> 
+        </div>
+        
+    </header>
+    
+    <div class='toggle'>
+        <div class='tabs'>
+            <div class='tab active'>Initial Dashboard</div>
+            <div class='tab'>Sales vs Shipped products</div>
+
+        </div>
+        <div class='panels'>
+            <div class='panel' id="vizContainer"></div>
+            <div class='panel' id="vizContainertwo"></div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
